@@ -1,0 +1,117 @@
+body{
+	background-color:#656565;
+}
+#header{	
+	position:relative;
+}
+/*CSS menu*/
+
+
+#menu{
+	
+	width:800px;
+	margin-top:3%;
+	position:relative;
+
+
+}
+
+#first_m{
+	
+	margin-left:221px;
+}
+.menu_item{
+	display:inline-block;
+	background:black;
+	padding:8px;
+	margin-left:-10px;
+}
+#menu a{
+
+	color:white;
+
+	text-decoration:none;
+
+}
+
+#menu a:hover {
+
+	color: gray;
+	text-decoration:none;
+
+}
+
+#menu a:active {
+	
+	color:gray;
+	text-decoration:none;
+
+}
+
+
+
+
+#left{
+	position:relative;
+	float:left;	
+	width:220px;
+	margin-top:-70px;
+}
+#logo{
+	margin-left:25px;
+}
+#center {
+	
+	background-color:white;
+	margin:0px 221px; 
+	padding:60px;
+	word-wrap: break-word;	
+	border: 2px solid black;	
+	min-width:650px;
+}
+
+
+
+.api_description{
+	display:none;
+	border: 1px solid gray;
+	padding: 60px;
+}
+a{
+	color: BLACK;	
+	font-size:16;
+}
+.winapi a{
+	font-size:18;
+}
+.winapi_clicked a{
+	font-size:18;	
+	color: gray;
+}
+.edit{
+	float:right;
+}
+
+#login_form{	
+	margin-left:40%;
+}
+#add_form{		
+	margin-left:30%;	
+
+}
+
+label {
+	display: block;
+	text-align: left;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+#addbutton{
+	margin-top:1%;
+	min-width:100px;
+	min-height:30px;
+}
+#change_pass{
+	margin-left:40%;
+}
+
