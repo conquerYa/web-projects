@@ -57,6 +57,10 @@
 			include "edit.php";
 			include "edit_form.php";
 		}
+		else if(isset($_GET['func_id'])){
+			$f_id = $_GET['func_id'];
+			include "func_descr.php";
+		}
 		else{	
 			include "showAPI.php";	
 			if($_GET['ok']==1){

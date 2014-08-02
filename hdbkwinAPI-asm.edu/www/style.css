@@ -67,26 +67,29 @@ body{
 	padding:60px;
 	word-wrap: break-word;	
 	border: 2px solid black;	
-	min-width:650px;
+	min-width:760px;
 }
 
 
 
 .api_description{
-	display:none;
-	border: 1px solid gray;
-	padding: 60px;
+	font-size:15.5;
+	display:block;
+	padding: 0px 40px 40px 40px;
 }
 a{
 	color: BLACK;	
 	font-size:16;
 }
+
 .winapi a{
 	font-size:18;
 }
-.winapi_clicked a{
-	font-size:18;	
-	color: gray;
+#name{
+	font-size:18;
+}
+#descr{
+	font-size:16.4;
 }
 .edit{
 	float:right;
@@ -96,7 +99,7 @@ a{
 	margin-left:40%;
 }
 #add_form{		
-	margin-left:30%;	
+	margin-left:18%;	
 
 }
 
