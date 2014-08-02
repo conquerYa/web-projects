@@ -1,1 +1,1 @@
-This website was created for journaling performance in pursuing goals.
+This website is intended for journaling performance in pursuing goals.
