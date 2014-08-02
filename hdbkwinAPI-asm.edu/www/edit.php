@@ -13,6 +13,7 @@
 	$syntax = $row['syntax'];
 	$params = $row['params'];
 	$remark = $row['remark'];
+	$return = $row['returnv'];
 	$requirements = $row['requirements'];
 ?>
 <?php include "disconnect.php";}?>

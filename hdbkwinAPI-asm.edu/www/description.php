@@ -18,6 +18,10 @@
   		echo "<br>";
 		echo "<pre>".$row['params']."</pre>";
 		echo "<br>";
+		echo "<b>Возвращаемое значение</b>";
+  		echo "<br>";
+		echo "<pre>".$row['returnv']."</pre>";
+		echo "<br>";
 		echo "<b>Замечания</b>";
   		echo "<br>";
 		echo "<pre>".$row['remark']."</pre>";

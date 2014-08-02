@@ -31,6 +31,7 @@
 		<label>Описание:</label> <textarea name="description" rows="4" cols="80"></textarea>
 		<label>Синтаксис:</label> <textarea name="syntax" rows="4" cols="80"></textarea>				
 		<label>Параметры и их описание:</label> <textarea name="params" rows="4" cols="80"></textarea>
+		<label>Возвращаемое значение:</label> <textarea name="return" rows="4" cols="80"></textarea>
 		<label>Замечания:</label> <textarea name="remark" rows="4" cols="80"></textarea>
 		<label>Требования, библиотеки:</label> <textarea name="requirements" rows="4" cols="80"></textarea><br>
 		<input id="addbutton" type="submit" value="Добавить"><br><div id="warning" style="display:inline-block"></div>
