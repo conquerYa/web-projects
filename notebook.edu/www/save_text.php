@@ -23,6 +23,8 @@ else{
  			die('Error: ' . mysqli_error($con));
 		}
 	}
+
+	echo $find;
 }
 require "disconnect.php";
 ?>

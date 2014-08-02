@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <title>Notebook</title>
@@ -6,11 +5,11 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 <body>
-<script type="text/javascript">	
-	$(document).ready(function() {		
-		var page = getURLParameter("page");
-		var id = getURLParameter("goal_id");
-		if(page=="goals"){
+<script type="text/javascript">
+	$(document).ready(function() {
+		var page = getURLParameter("page");	
+		if(page=="goals"){			
+			var id = getURLParameter("goal_id");
 			$(".notepad").on('keyup change',function(){ 
 				var text = $(".notepad").val();
 				$.ajax({
@@ -33,8 +32,7 @@
 					window.location.replace("index.php?page=goals&goal_id="+id);	
 				}
  			});
-		}
-		else{
+		}else{
 			var date = getURLParameter("day");
 			$('#right').click(function(){
 				window.location.replace("index.php?day="+getDay(date,1));		
@@ -48,7 +46,8 @@
                    		 		type:"post",
                    		 		url:"save_text.php",
 			 		data:{date: date, text: text},
-                      				 success:function(data){	                        		
+                      				success:function(data){
+						var a = data;	                		
                    				 }
                  			});
 			});
@@ -77,11 +76,9 @@
 		day = dd+"." + mm + "." + yy;
 		return day;	
 	}
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-    );
-}
+	function getURLParameter(name) {
+  		return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+	}
 </script>
 <?php
 	if(isset($_GET["page"])){
