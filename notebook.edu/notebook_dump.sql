@@ -34,19 +34,6 @@ CREATE TABLE IF NOT EXISTS `days` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=83 ;
 
---
--- Дамп данных таблицы `days`
---
-
-INSERT INTO `days` (`id`, `date`, `text`) VALUES
-(74, '22.07.14', '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'),
-(77, '23.07.14', ''),
-(78, '25.07.14', ''),
-(79, '25.07.14', ''),
-(80, '02.08.14', ''),
-(81, '02.08.14', ''),
-(82, '02.08.14', '');
-
 -- --------------------------------------------------------
 
 --
