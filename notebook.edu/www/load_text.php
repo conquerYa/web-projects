@@ -1,15 +1,13 @@
 <?php
 require "connect.php";
-if(isset($_POST['id'])){
-	$id = mysqli_real_escape_string($con, $_POST['id']);
+if(isset($id)){
 	$result = mysqli_query($con,"SELECT * FROM goals where id ='".$id."';");
-	$t =  "?|}!@#$~_";
 }
 else{
-	$date = mysqli_real_escape_string($con, $_POST["date"]);
-	$result = mysqli_query($con,"SELECT text FROM days where date ='".$date."';");
+	$result = mysqli_query($con,"SELECT text FROM days where date ='".$day."';");
 }
 $row = mysqli_fetch_array($result);
-echo $row["text"].$t.$row["period"];
+$text =  $row["text"];
+if(!isset($day)) $day = "Goals for ".$row["period"];
 require "disconnect.php";
 ?>
