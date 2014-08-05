@@ -25,7 +25,7 @@
          });
  
        </script>
-<div id="add_form">
+<div class="add_form">
 	<form name=addForm method="post" action=add.php onsubmit="return validateForm();">
 		<label>Наименование:</label> <input type="text" name="name" size=105 id=fname>*<br>
 		<label>Описание:</label> <textarea name="description" rows="4" cols="80"></textarea>

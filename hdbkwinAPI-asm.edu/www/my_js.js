@@ -9,6 +9,16 @@ function validateForm() {
    	 }		
 	return true;
 }
+function validateEditForm() {
+    	var x = document.forms["editForm"]["name"].value.trim();
+   	 var reg = /^[a-zA-Z]+$/;
+  	 if (!(reg.test(x))) {	
+       		alert("Наименование некорректно");
+		document.editForm.name.focus() ;
+      		return false;
+   	 }		
+	return true;
+}
 
 function showDescription(t) {
 	var id = "id" + t;

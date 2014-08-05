@@ -1,6 +1,6 @@
-<div id="add_form">
-	<form name=editForm method="post" action="update.php" onsubmit="return validateForm()">
-		<label>Наименование:</label> <input type="text" name="name" size=105 value="<?php echo $name?>"><br>
+<div class="add_form">
+	<form name=editForm method="post" action="update.php" onsubmit="return validateEditForm();">
+		<label>Наименование:</label> <input type="text" name="name" size=105 value="<?php echo $name?>">*<br>
 		<label>Описание:</label> <textarea name="description" rows="4" cols="80"><?php echo $description?></textarea>
 		<label>Синтаксис:</label> <textarea name="syntax" rows="4" cols="80"><?php echo $syntax?></textarea>				
 		<label>Параметры и их описание:</label> <textarea name="params" rows="4" cols="80"><?php echo $params?></textarea>

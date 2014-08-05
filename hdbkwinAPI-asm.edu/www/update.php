@@ -3,7 +3,7 @@
 
 <?php		
 	$id = mysqli_real_escape_string($con, $_POST['id']);
-	$name = mysqli_real_escape_string($con, $_POST['name']);
+	$name = trim(mysqli_real_escape_string($con, $_POST['name']));
 	$syntax = mysqli_real_escape_string($con, $_POST['syntax']);
 	$description = mysqli_real_escape_string($con, $_POST['description']);
 	$params = mysqli_real_escape_string($con, $_POST['params']);
