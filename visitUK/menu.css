@@ -1,0 +1,85 @@
+#main {
+ margin: 0 auto;
+ width: 800px;
+}
+.header {
+ width: 800px;
+ height: 50px;
+}
+.footer {
+ width: 800px;
+ height: 50px;
+ clear: both;
+}
+.leftcolumn {
+ width: 150px;
+ float: left;
+}
+.content {
+ width: 650px;
+ float: left;
+ background: #ccc;
+}
+.rightcolumn {
+ width: 150px;
+ float: left;
+}
+
+
+
+
+
+
+
+#menu {
+ margin: 0;
+ padding: 0;
+}
+#menu li {
+ border: 1px solid #09f;
+ width: 161px;
+ background: #fff;
+ list-style: none;
+ float: left;
+}
+/* немного украшений */
+#menu li a {
+ color: #009;
+ font: 12px/12px Arial, sans-serif;
+ padding: 5px;
+ display: block;
+ text-decoration: none;
+ background: #87CEFA;
+}
+#menu li a:hover {
+ color: #0cf;
+}
+/* вот от сюда собственно и начинается вся соль способа */
+#menu li.hover, /* для IE6 */
+#menu li:hover {
+ position: relative;
+}
+#menu li.hover ul, /* для IE6 */
+#menu li:hover ul {
+ display: block;
+}
+/* еще немного украшательств */
+#menu li.hover a,
+#menu li:hover a {
+ color: #0cf;
+}
+#menu li.hover ul li a,
+#menu li:hover ul li a {
+ color: #009;
+}
+#menu ul li a:hover {
+ color: #0cf!important;
+}
+#menu ul {
+ margin: 0;
+ padding: 0;
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 100%; /* left и top смещение относительно родительского элемента */
+}
